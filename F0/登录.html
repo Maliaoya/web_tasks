@@ -1,0 +1,133 @@
+      
+    <html>  
+    <head>  
+        <meta charset="UTF-8">  
+        <title>登录</title>  
+      
+        <style type="text/css">  
+            * 
+			{
+				box-sizing: border-box;
+				margin: 4;
+				padding: 0;
+				font-weight: 300;
+			} 
+            body 
+			{
+				font-family: 'PT Sans', Helvetica, Arial, sans-serif;/*设置字体*/
+				text-align: center;/*水平居中*/
+				color: #3d3b4f;/*字体颜色*/
+			}
+			.form 
+			{
+				padding: 20px 0;
+				position: relative;
+				z-index: 2;
+			}
+			.form input 
+			{
+				-webkit-appearance: none;
+					-moz-appearance: none;
+						appearance: none;
+				outline: 0;
+				border: 1px solid rgba(255, 255, 255, 0.4);
+				background-color: rgba(255, 255, 255, 0.2);
+				width: 250px;
+				border-radius: 3px;
+				padding: 10px 15px;
+				margin: 4 auto 10px auto;
+				display: block;
+				text-align: center;
+				font-size: 18px;
+				color: white;
+				-webkit-transition-duration: 0.25s;
+					transition-duration: 0.25s;
+				ont-weight: 300;
+			}
+			.form input:hover 
+			{
+				background-color: rgba(255, 255, 255, 0.4);
+			}
+			.form input:focus 
+			{
+				  background-color: white;
+				  width: 300px;
+				  color: #53e3a6;
+			}
+			.form button 
+			{
+				  -webkit-appearance: none;
+					 -moz-appearance: none;
+						  appearance: none;
+				  outline: 0;
+				  background-color: 3d3b4f;
+				  border: 0;
+				  padding: 10px 15px;
+				  color: #fff;
+				  border-radius: 3px;
+				  width: 250px;
+				  cursor: pointer;
+				  font-size: 18px;
+				  -webkit-transition-duration: 0.25s;
+						  transition-duration: 0.25s;
+			}
+			.form button:hover 
+			{
+				background-color: #3d3b4f;
+			}
+            a  
+            {  
+                text-decoration: none;  
+                color: #fff;  
+            }  
+            a:hover  
+            {  
+                text-decoration: underline;  
+                color: red;  
+            }  
+            .wrap  
+            {  
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				height: 400px;
+				margin-top: -200px;
+				overflow: hidden;
+            }  
+            .main  
+            {  
+                width: 350px;  
+                height: 400px;  
+                margin: 0 auto;  
+            }  
+            .phoneIn  
+            {  
+                display: inline-block;  
+                float: right;  
+                font-size: 14px;  
+                background-image: url(images/phone.png);  
+                background-repeat: no-repeat;  
+                margin: 30px 0px 10px 0px;  
+            }  
+            
+      
+        </style>  
+    </head>  
+    <body background="mario.jpg">   
+        <div class="wrap">    
+            <div class="main"> 
+				 <strong><span style="font-weight: bold;font-size: 25px;">登  录</span></strong>  
+                <form class="form" action="">  
+                    <input type="text" class="inputDiv" placeholder="Username">  
+                    <input type="password" class="inputDiv" placeholder="Password">   
+                    <p><button type="submit">登  录</button> </p>
+					<p><button type="submit">注  册</button> </p>
+                </form> 
+				<form>
+					<input type="checkbox" value="checked" checked="checked"><span style="color:000000">记住密码<span>
+				</form>
+            </div>  
+        </div>    
+    </body>  
+    </html>
