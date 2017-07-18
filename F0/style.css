@@ -1,0 +1,107 @@
+ * 
+{
+	box-sizing: border-box;
+	margin: 4;
+	padding: 0;
+	font-weight: 300;
+} 
+body 
+{
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;/*设置字体*/
+	text-align: center;/*水平居中*/
+	color: #3d3b4f;/*字体颜色*/
+}
+.form 
+{
+	padding: 20px 0;
+	position: relative;
+	z-index: 2;
+}
+.form input 
+{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: 0;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 250px;
+	border-radius: 3px;
+	padding: 10px 15px;
+	margin: 4 auto 10px auto;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	-webkit-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+	ont-weight: 300;
+}
+.form input:hover 
+{
+	background-color: rgba(255, 255, 255, 0.4);
+}
+.form input:focus 
+{
+	background-color: white;
+	width: 300px;
+	color: #53e3a6;
+}
+.form button 
+{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: 0;
+	background-color: 3d3b4f;
+	border: 0;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 3px;
+	width: 250px;
+	cursor: pointer;
+	font-size: 18px;
+	-webkit-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+}
+.form button:hover 
+{
+	background-color: #3d3b4f;
+}
+a  
+{  
+    text-decoration: none;  
+	color: #fff;  
+    }  
+a:hover  
+{  
+    text-decoration: underline;  
+    color: red;  
+}  
+.wrap  
+{  
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	margin-top: -200px;
+	overflow: hidden;
+}  
+.main  
+{  
+    width: 350px;  
+    height: 400px;  
+    margin: 0 auto;  
+}  
+.phoneIn  
+{  
+    display: inline-block;  
+    float: right;  
+    font-size: 14px;  
+    background-image: url(images/phone.png);  
+    background-repeat: no-repeat;  
+    margin: 30px 0px 10px 0px;  
+}  
+            
+      
