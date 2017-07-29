@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+    <meta charset="utf-8">  
+    <title>HTML5本地存储之Web Storage篇</title>  
+</head>  
+<body>  
+    <div style="border: 2px dashed #ccc;width:320px;text-align:center;"> 
+		<label for="name">姓名：</label>  
+        <input type="text" id="name" name="name" class="text"/> 
+		<br>
+		<label for="id">学号：</label>  
+        <input type="text" id="id" name="id" class="text"/> 
+		<br>
+		<label for="sex">性别：</label>  
+        <input type="text" id="sex" name="sex" class="text"/> 
+		<br>
+		<label for="grade">姓名：</label>  
+        <input type="text" id="grade" name="grade" class="text"/> 
+		<br>
+		<label for="major">专业：</label>  
+        <input type="text" id="major" name="major" class="text"/> 
+		<br>
+		<input type="button" onclick="save()" value="新增记录"/>  
+        <hr/>   
+		学号：<input type="text" id="set_id" name="set_id"/><br>
+		姓名：<input type="text" id="set_name" name="set_name"/><br>
+		性别：<input type="text" id="set_sex" name="set_sex"/><br>
+		年级：<input type="text" id="set_grade" name="grade"/><br>
+		专业：<input type="text" id="set_major" name="set_maor"/><br>
+		<input type="button" onclick="change()" value="修改信息"/>
+		<hr/>
+        <label for="search_phone">输入学号：</label>  
+        <input type="text" id="search_site" name="search_site"/>  
+        <input type="button" onclick="find()" value="查找信息"/> 
+		<input type="button" onclick="del()" value="删除信息"/>
+        <p id="find_result"><br/></p>  
+    </div>  
+    <br/>  
+    <div id="list">  
+    </div>  
+    <script src="manage.js"></script>
+</body>  
+</html>
