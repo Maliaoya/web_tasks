@@ -1,0 +1,46 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>轮播</title>
+	<link rel="stylesheet" type="text/css" href="css/setc.css">
+	<script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.indexSlidePattern.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(e){
+		  var opt={
+			"speed":"normal",	//变换速度;
+			"by":"mouseover",	//触发事件;
+			"auto":true	,	//是否自动播放;
+			"sec":3000	 		//自动播放间隔;
+		  };
+		  $("#demo").IMGDEMO(opt);    
+	});
+	</script>
+</head>
+<body>
+
+	<ul id="demo">
+		<li class="active">
+			<a href="#"><img src="images/01.jpeg"  /></a>
+			<div><a href="#">paul frank</a></div>
+		</li>
+		<li>
+			<a href="#"><img src="images/02.jpeg"  /></a>
+			<div><a href="#">paul frank</a></div>
+		</li>
+		<li>
+			<a href="#"><img src="images/03.jpg"  /></a>
+			<div><a href="#">paul frank</a></div>
+		</li>
+		<li>
+			<a href="#"><img src="images/04.jpeg"  /></a>
+			<div><a href="#">paul frank</a></div>
+		</li>
+		<li>
+			<a href="#"><img src="images/05.jpeg"  /></a>
+			<div><a href="#">paul frank</a></div>
+		</li>
+	</ul>
+
+</body>
+</html>
