@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        body{text-align:center;font-size:15px;font-family:微软雅黑;}a{text-decoration:none;color:Black;}#main{width:560px;text-align:left;margin:0 auto;margin-top:50px;}.btn{margin:15px 0;text-align:center;}.btn a{display:inline-block;padding:3px 5px;background-color:#45B823;color:White;opacity:0.8;border-radius:4px;cursor:pointer;}.a-first{margin-right:20px;}.btn a:hover{opacity:1.0;}.con p{text-indent:30px;}.con p a{color:Blue;}.con p a:hover{color:Red;text-decoration:underline;}.con ul li{line-height:24px;}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <img src="../App_images/HttpErrors/404.png" alt="404页面"/>
+        <div class="btn">
+            <a href="http://www.lvyestudy.com" class="a-first">返回首页</a>
+            <a onclick="javascript:history.back(-1);">返回上页</a>
+        </div>
+        <div class="con">
+            <p><a href="http://www.lvyestudy.com">绿叶学习网</a>（http://www.lvyestudy.com）正在联系火星总部查找你所需要的页面，请返回等待信息......</p>
+            <ul>
+                <li>不要返回吗？</li>
+                <li>确定不要返回吗？</li>
+                <li>真的确定不要返回吗？</li>
+                <li>你真的非常肯定地确定不要返回吗？</li>
+                <li>好吧，还是随便你要不要真的确定返回吧。</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
