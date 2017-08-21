@@ -1,0 +1,136 @@
+
+/*整体样式*/
+body
+{
+    color:#2B2B2B;
+    font:14px/1.5 Microsoft YaHei,Arial,Helvetica,sans-serif;
+}
+
+/*清除浮动*/
+.clearfix
+{
+	*zoom:1;
+}
+.clearfix::after
+{
+    clear:both;
+    content:"";
+    display:block;
+    height:0;
+    visibility:hidden;
+}
+
+
+
+
+body
+{
+    text-align:center;
+    font-size:14px;
+    font-family:微软雅黑;
+}
+#container
+{
+    text-align:left;
+    margin:0 auto;
+    width:960px;
+    position:relative;
+}
+
+/*左盒子样式*/
+#bd-fl
+{
+    width:468px;
+    float:left;
+}
+.color-picker
+{
+    margin-top:10px;
+    border:1px solid silver;
+    overflow:hidden;
+}
+/*（最左层）拖动层样式*/
+.color-img
+{
+    position:relative;
+    float:left;
+}
+.color-img img
+{
+    width:256px;
+    height:256px;
+    margin:5px;
+    background-color:Red;
+}
+#dragger
+{
+    width:11px;
+    height:11px;
+    position:absolute;
+    top:0;
+    left:255px;
+    background-image:url("img/circle.gif");
+}
+/*（中间层）滑块层样式*/
+.color-bar
+{
+    display:inline-block;
+    float:left;
+    margin-top:5px;
+    margin-left:20px;
+}
+#slider
+{
+    position:relative !important;
+    background-image:url("img/hueBar.png") !important;
+    width:20px !important;
+    height:255px !important;
+    border-radius:0 !important;
+          
+}
+.ui-slider-handle
+{
+    width:38px !important;
+    height:9px !important;
+    position:absolute !important;
+    left:-9px !important;
+    margin-bottom:-5px !important;
+    background-image:url("img/handle.png") !important;
+    background-color:transparent !important;
+    border:none !important; 
+}
+.ui-slider-vertical
+{
+    margin-bottom:-5px !important;  
+    border:none !important; 
+}
+/*（最右层）数据层样式*/
+.color-view
+{
+    float:left;
+    display:inline-block;
+    margin-left:10px;
+    font-family:宋体;
+    margin-top:5px;
+    margin-left:25px;
+}
+.color-view div
+{
+    margin:10px 0;
+}
+.color-view .view
+{
+    width:60px;
+    height:60px;
+    border:1px solid gray;
+    background-color:Red;
+    margin-top:0;/*去除整体样式定义中的顶外边距*/
+}
+.color-view input
+{
+    width:30px;
+}
+.color-view span
+{
+    margin-left:4px;
+}

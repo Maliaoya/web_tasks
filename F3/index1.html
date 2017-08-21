@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head><title>颜色选择器</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="color.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <form method="post" action="color_picker.aspx">
+    <div id="container">
+        <section id="bd-fl">
+            <div class="color-picker">
+                <div class="color-img">
+                    <img src="img/bgGradient.png" alt="" onclick="getPosition(event)" draggable="false"/>
+                    <div id="dragger" class="ui-draggable ui-draggable-handle" style="left: 128.6px; top: 80.4px;"></div>
+                </div>
+                <div class="color-bar">
+                    <div id="slider" class="ui-slider ui-widget ui-widget-content ui-corner-all ui-slider-vertical">
+					<span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="bottom: 35.8333%;"></span>
+					</div>
+                </div>
+                <div class="color-view">
+                    <div class="view"></div>
+                    <div class="view-data">
+                        <span>R：</span><input name="txt_r" type="text" value="255" id="txt_r" />
+                    </div>
+                    <div class="view-data">
+                        <span>G：</span><input name="txt_g" type="text" value="0" id="txt_g" />
+                    </div>
+                    <div class="view-data">
+                        <span>B：</span><input name="txt_b" type="text" value="0" id="txt_b" />
+                    </div>
+                    <div class="view-data">
+                        <span>H：</span><input name="txt_h" type="text" value="0" id="txt_h" />
+                    </div>
+                    <div class="view-data">
+                        <span>S：</span><input name="txt_s" type="text" value="100" id="txt_s" />
+                    </div>
+                    <div class="view-data">
+                        <span>V：</span><input name="txt_v" type="text" value="100" id="txt_v" />
+                    </div>
+                </div>
+            </div>
+            <div class="color-data">
+                <div class="yourcolor">
+                    <span>我的颜色值：</span><input name="txt_you" type="text" value="#FF0000" id="txt_you" />
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript" src="color.js"></script>
+    </form>
+</body>
+</html>
+
+
